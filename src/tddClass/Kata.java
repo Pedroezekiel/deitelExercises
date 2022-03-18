@@ -1,7 +1,7 @@
 package tddClass;
 
 public class Kata {
-    private int number;
+
 
     public int copies(int number) {
         if (number > 1 && number <= 4) {
@@ -30,10 +30,52 @@ public class Kata {
     public boolean takingInNumbers(int num) {
 
         if (num % 2 == 0) {
-            return true;}
-        return  false;
-
+            return true;
+        }
+        return false;
     }
 
 
+    public int num(int firstNumber, int secondNumber, int thirdNumber, int fourthNumber, int fifthNumber) {
+        int largestNumber = firstNumber;
+        if (secondNumber > largestNumber) {
+            largestNumber = secondNumber;
+        }
+        if (thirdNumber > largestNumber) {
+            largestNumber = thirdNumber;
+        }
+        if (fourthNumber > largestNumber) {
+            largestNumber = fourthNumber;
+        }
+        if (fifthNumber > largestNumber) {
+            largestNumber = fifthNumber;
+        }
+        return largestNumber;
+    }
+
+    public int numbers(int number) {
+
+        int count;
+        int factors = 0;
+        for (count = 1; count <= number; count++) {
+            if (number % count == 0) factors++;
+
+        }
+        return factors;
+    }
+
+    public boolean primeNumbers(int primeNum) {
+
+        int prime;
+        int number = 0;
+        for (prime = 1; prime <= primeNum; prime++) {
+            if (primeNum % prime == 0) number++;}
+
+            if (number == 2) {
+            return true;}
+           else{
+               return false;
+            }
+
+    }
 }

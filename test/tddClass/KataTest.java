@@ -103,12 +103,37 @@ public class KataTest {
         //given
         Kata evenNumbers = new Kata();
         //when
-        evenNumbers.takingInNumbers(3);
+        evenNumbers.takingInNumbers(4);
         //assert
-        assertEquals(true, evenNumbers.takingInNumbers(3));
+        assertEquals(true, evenNumbers.takingInNumbers(4));
+    }
+
+    @Test
+    public void returnLargestNumber() {
+        //given
+        Kata largestNumber = new Kata();
+        //when
+        largestNumber.num(4,12,8,9,10);
+        //assert
+        assertEquals(12,largestNumber.num(4,12,8,9,10));
+    }
+    @Test
+    public void numbersFactor(){
+        //given
+    Kata number= new Kata();
+       //when
+  int result=number.numbers(7);
+    assertEquals(2,result);
+    }
+    @Test
+    public void primeNumber(){
+       //given
+    Kata prime = new Kata();
+      //when
+    boolean result=prime.primeNumbers(11);
+    //assert
+        assertEquals(true,result);
     }
 
 
 }
-
-
