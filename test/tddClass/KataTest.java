@@ -98,5 +98,17 @@ public class KataTest {
         }
     }
 
+    @Test
+    public void isEven() {
+        //given
+        Kata evenNumbers = new Kata();
+        //when
+        evenNumbers.takingInNumbers(3);
+        //assert
+        assertEquals(true, evenNumbers.takingInNumbers(3));
+    }
+
 
 }
+
+
