@@ -64,7 +64,7 @@ public class TwelveDaysOfChristmas {
 
                 case 12:
                     System.out.println();
-                    System.out.println("one the twelfth day of christmas my true love said to me");
+                    System.out.println("one the twelveth day of christmas my true love said to me");
                     break;
             }
 

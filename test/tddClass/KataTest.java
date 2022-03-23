@@ -135,5 +135,4 @@ public class KataTest {
         assertEquals(true,result);
     }
 
-
 }
