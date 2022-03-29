@@ -1,4 +1,4 @@
-package chapterFiveAssigment;
+package assigment;
 
 public class TrianglePrinting {
     public static void main(String[] args) {

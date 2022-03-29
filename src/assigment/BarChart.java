@@ -1,4 +1,4 @@
-package chapterFiveAssigment;
+package assigment;
 
 import java.util.Scanner;
 

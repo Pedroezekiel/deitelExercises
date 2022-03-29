@@ -1,8 +1,8 @@
 package chapter2;
 
-/*import java.util.Scanner;
+import java.util.Scanner;
 
-publ0ic class Test {
+public class Test {
 
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
@@ -23,4 +23,4 @@ publ0ic class Test {
     }
 
 
-}*/
+}

@@ -39,7 +39,7 @@ public class PhoneMenuFunctions {
                         """);
                 System.out.println("enter a digit");
                 break;
-                int optionsFunction = scanner.nextInt();
+           // int optionsFunction = scanner.nextInt();
             case 8:
                 System.out.println("""
                         1 -> Type of view
@@ -63,28 +63,30 @@ public class PhoneMenuFunctions {
                         10 -> Serice command editor
                         """);
                 System.out.println("entetr a digit");
-                  break;
-                int messegeSetting = scanner.nextInt();
+                break;
+           // int messegeSetting = scanner.nextInt();
             case 7:
                 System.out.println("""
                         1 -> Set 1^2
                         2 -> common^3
                         """);
 
-        int messageFunction = scanner.nextInt();
-            case 1:
-                System.out.println("""
-                        1 -> Message center number
-                        2 -> Messages sent as
-                        3 -> Messages validity
-                        """);
-            case common3:
-                System.out.println("""
-                        1 -> Delivery reports
-                        2 -> Reply via same centre
-                        3 -> Character support""");
+                int messageFunction = scanner.nextInt();
+                switch (userInput) {
+                    case 1:
+                        System.out.println("""
+                                1 -> Message center number
+                                2 -> Messages sent as
+                                3 -> Messages validity
+                                """);
+                    case 2:
+                        System.out.println("""
+                                1 -> Delivery reports
+                                2 -> Reply via same centre
+                                3 -> Character support""");
 
 
+                }
         }
     }
 }

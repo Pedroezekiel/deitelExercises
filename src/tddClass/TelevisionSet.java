@@ -1,6 +1,7 @@
 package tddClass;
 
-public class TelevisionSet{
+public class TelevisionSet {
+
     private boolean turnOn;
     private int channel;
     private int volume;
@@ -33,13 +34,13 @@ public class TelevisionSet{
             this.channel=channel +1;}
         else if(channel>20){
             channel = 20;
-            }
         }
+    }
 
 
     public void decreaseChannel() {
         if(channel>0 && channel<20){
-        this.channel = channel - 1;}
+            this.channel = channel - 1;}
         else if(channel<0){
             channel = 0;
         }
@@ -56,7 +57,7 @@ public class TelevisionSet{
 
     public void increaseVolume() {
         if(volume>0 && volume<=100){
-        this.volume = volume + 1;
+            this.volume = volume + 1;
         }else if(volume>100){
             volume=100;
         }
@@ -85,3 +86,4 @@ public class TelevisionSet{
         return  mute;
     }
 }
+
