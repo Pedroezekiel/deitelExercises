@@ -1,5 +1,6 @@
-package tddClass;
+package chater3TddClass;
 
+import chapter3.PetrolPurchase;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -48,7 +49,7 @@ public class PetrolPurchaseTest {
       //when
     myPetrolPurchase. petrolDiscount(5);
     //assert
-    assertEquals(1.2865000000000002,myPetrolPurchase.getPetrolDiscont());
+    assertEquals(1.2865000000000002,myPetrolPurchase.getPetrolDiscount());
     }
     @Test
     public void PetrolPurchaseTest(){

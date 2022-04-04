@@ -9,7 +9,6 @@ public class StudentGrades {
         int countB = 0;
         int countC = 0;
         int countD = 0;
-
         for (int i = 1; i <= 5; i++) {
             System.out.println("enter student name");
             String studentName = scanner.next();

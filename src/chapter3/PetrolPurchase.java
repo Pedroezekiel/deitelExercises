@@ -1,11 +1,11 @@
-package tddClass;
+package chapter3;
 
 public class PetrolPurchase {
     private String stationLocation;
     private String petrolType;
     private int petrolQuantity;
     private double petrolPerLiters;
-    private double petrolDiscont;
+    private double petrolDiscount;
     private double petrolPurchaseAmount;
 
     public void setStationLocation() {
@@ -44,20 +44,20 @@ public class PetrolPurchase {
 
     public void petrolDiscount(double percentage) {
         petrolPerLiters=25.73;
-        this.petrolDiscont = (percentage * 0.01) * petrolPerLiters;
+        this.petrolDiscount = (percentage * 0.01) * petrolPerLiters;
 
     }
 
 
-    public double getPetrolDiscont() {
-        return petrolDiscont;
+    public double getPetrolDiscount() {
+        return petrolDiscount;
     }
 
     public void petrolPurchaseAmount() {
         petrolQuantity=20;
         petrolPerLiters=25.73;
-        petrolDiscont=1.2865000000000002;
-        petrolPurchaseAmount =(petrolQuantity * petrolPerLiters) - petrolDiscont;
+        petrolDiscount=1.2865000000000002;
+        petrolPurchaseAmount =(petrolQuantity * petrolPerLiters) - petrolDiscount;
        this.petrolPurchaseAmount = petrolPurchaseAmount;
 
 

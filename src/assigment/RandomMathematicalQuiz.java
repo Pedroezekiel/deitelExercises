@@ -1,4 +1,4 @@
-package chapter2;
+package assigment;
 
 import java.util.Random;
 import java.util.Scanner;
