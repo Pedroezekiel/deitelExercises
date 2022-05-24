@@ -130,7 +130,7 @@ public class KataTest {
        //given
     Kata prime = new Kata();
       //when
-    boolean result=prime.primeNumbers(2);
+    boolean result=prime.primeNumbers(3);
     //assert
         assertEquals(true,result);
     }

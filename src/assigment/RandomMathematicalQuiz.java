@@ -36,12 +36,11 @@ public class RandomMathematicalQuiz {
                     if (firstNumber >= secondNumber) {
                         initialAnswer = firstNumber - correctAnswer;
                         System.out.printf("%d - %d =", firstNumber, secondNumber);
-                        userAnswer = input.nextInt();
                     } else {
                         initialAnswer = secondNumber - firstNumber;
                         System.out.printf("%d - %d =", secondNumber, firstNumber);
-                        userAnswer = input.nextInt();
                     }
+                    userAnswer = input.nextInt();
                     if (userAnswer == initialAnswer) {
                         System.out.println("correct");
                         correctAnswer++;
@@ -50,7 +49,6 @@ public class RandomMathematicalQuiz {
                         wrongAnswer++;
                     }
                     break;
-
 
                 case 2:
                     if (firstNumber >= secondNumber) {
@@ -89,8 +87,8 @@ public class RandomMathematicalQuiz {
         }
 
 
-        System.out.println("correctAnswer" +correctAnswer);
-        System.out.println("wrongAnswer" +wrongAnswer);
+        System.out.println("correctAnswer " +correctAnswer);
+        System.out.println("wrongAnswer " +wrongAnswer);
 
 
 
