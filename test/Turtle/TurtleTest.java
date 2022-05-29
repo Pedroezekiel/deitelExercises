@@ -5,7 +5,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TurtleTest {
-        @Test void test_that_turtle_can_be_created(){
+    private SketchPad sketchPad;
+
+    @Test void test_that_turtle_can_be_created(){
         Turtle turtle = new Turtle();
         assertNotNull(turtle);
     }
@@ -42,7 +44,7 @@ public class TurtleTest {
         turtle.turnRight();
         assertSame(Direction.WEST,turtle.getCurrentDirection());
     }
-        @Test void test_that_turtle_can_TurnRight(){
+        @Test void test_that_turtle_can_TurnRight_while_facing_north(){
         Turtle turtle = new Turtle();
         turtle.turnRight();
         turtle.turnRight();
@@ -50,18 +52,18 @@ public class TurtleTest {
         assertSame(Direction.NORTH,turtle.getCurrentDirection());
     }
 
-        @Test void test_that_turtle_can_TurnLeft_While_FacingEast(){
+        @Test void test_that_turtle_can_TurnLeft_While_Facing_east(){
         Turtle turtle = new Turtle();
         turtle.turnLeft();
         assertSame(Direction.NORTH,turtle.getCurrentDirection());
     }
-        @Test void test_that_turtle_can_TurnLeft_While_Facing(){
+        @Test void test_that_turtle_can_TurnLeft_While_Facing_north(){
         Turtle turtle = new Turtle();
         turtle.turnLeft();
         turtle.turnLeft();
         assertSame(Direction.WEST,turtle.getCurrentDirection());
     }
-        @Test void test_that_turtle_can_TurnLeft(){
+        @Test void test_that_turtle_can_TurnLeft_from_west(){
         Turtle turtle = new Turtle();
         turtle.turnLeft();
         turtle.turnLeft();
@@ -78,12 +80,15 @@ public class TurtleTest {
         @Test void testToGoForward_facing_East(){
         Turtle turtle = new Turtle();
         turtle.penDown();
-      turtle.moveForward(5);
+        SketchPad sketchPad = new SketchPad(5,5) ;
+//        turtle.move(5,);
+        turtle.moveForward(5);
         turtle.turnRight();
         turtle.turnLeft();
         turtle.moveForward(5);
         assertEquals(new Position(4,4),turtle.getPosition());
     }
+    
 
 
         @Test void testToGoForward_facing_South(){

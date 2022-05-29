@@ -39,7 +39,7 @@ public class Turtle {
 
     }
 
-    public void move(int noOfSteps) {
+    public void move(int noOfSteps, SketchPad sketchPad) {
         if(currentDirection == EAST) increaseColumnBy(noOfSteps);
     }
 
