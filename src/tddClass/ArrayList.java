@@ -6,7 +6,7 @@ public class ArrayList {
     public  void add(int element) {
         if (element >= elements.length) {
             elements = new int[elements.length + 10];
-        }                                               g
+        }
         elements[counter] = element;
             counter++;
 
